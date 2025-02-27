@@ -8,8 +8,6 @@ import (
 	"time"
 )
 
-const dateFormat = "20060102"
-
 func NextDate(now time.Time, dateStr string, repeat string) (string, error) {
 	log.Printf("\n[NextDate] Start calculation")
 	log.Printf("[Input] now: %s, dateStr: %s, repeat: %s", now.Format(dateFormat), dateStr, repeat)
